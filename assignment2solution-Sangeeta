@@ -1,0 +1,369 @@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Pre-requisites @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+knodus@knodus-1550:~$ mongoimport -d assignment2_db -c student --file /home/knodus/Downloads/mongo_assignment/assignment2/assignment.json
+
+2016-04-09T09:39:15.809+0530	connected to: localhost
+2016-04-09T09:39:16.209+0530	imported 200 documents
+knodus@knodus-1550:~$ 
+
+knodus@knodus-1550:~$ mongo
+
+> use assignment2_db;
+switched to db assignment2_db
+> 
+> 
+> db.student.find().limit(2).pretty();
+{
+	"_id" : 0,
+	"name" : "aimee Zank",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 1.463179736705023
+		},
+		{
+			"type" : "quiz",
+			"score" : 11.78273309957772
+		},
+		{
+			"type" : "homework",
+			"score" : 6.676176060654615
+		},
+		{
+			"type" : "homework",
+			"score" : 35.8740349954354
+		}
+	]
+}
+{
+	"_id" : 1,
+	"name" : "Aurelia Menendez",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 60.06045071030959
+		},
+		{
+			"type" : "quiz",
+			"score" : 52.79790691903873
+		},
+		{
+			"type" : "homework",
+			"score" : 71.76133439165544
+		},
+		{
+			"type" : "homework",
+			"score" : 34.85718117893772
+		}
+	]
+}
+> 
+
+
+
+
+--------------------------------------------------------- Assignment-2 -------------------------------------------------------------------------
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+1. Insert document in student collection with name "Knoldus Noida" and scores are 
+		
+                  [{"type" : "exam",
+			"score" : 1.4
+		 },{
+			"type" : "quiz",
+			"score" : 11.7
+		},{
+			"type" : "homework",
+			"score" : 6.67
+		},{
+			"type" : "assignment",
+			"score" : 35.87
+		}]
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer ) > db.student.insert({"name": "Knoldus Noida","scores":[{"type" : "exam","score" : 1.4},{"type" : "quiz","score" : 11.7},{"type" : "homework","score" : 6.67},{"type" : "assignment","score" : 35.87}]})
+WriteResult({ "nInserted" : 1 })
+
+INSERTED RECORD IS: 
+
+> db.student.find({"name":"Giselan Levin"});
+{ "_id" : ObjectId("570884282c9db0f606a6e112"), "name" : "Knoldus Noida", "scores" : [ { "type" : "exam", "score" : 1.4 }, { "type" : "quiz", "score" : 11.7 }, { "type" : "homework", "score" : 6.67 }, { "type" : "assignment", "score" : 35.87 } ] }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+2. Find document/documents of person having name "Gisela Levin"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer )> db.student.find({"name":"Gisela Levin"}).pretty();
+{
+	"_id" : 19,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 44.51211101958831
+		},
+		{
+			"type" : "quiz",
+			"score" : 0.6578497966368002
+		},
+		{
+			"type" : "homework",
+			"score" : 93.36341655949683
+		},
+		{
+			"type" : "homework",
+			"score" : 49.43132782777443
+		}
+	]
+}
+{
+	"_id" : 133,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 15.88727528055548
+		},
+		{
+			"type" : "quiz",
+			"score" : 91.49884857295594
+		},
+		{
+			"type" : "homework",
+			"score" : 16.56032169309347
+		},
+		{
+			"type" : "homework",
+			"score" : 1.704262924559419
+		}
+	]
+}
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+3. Find document/documents of person having name "Gisela Levin" and display (project) only scores list.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer )> db.student.find({"name":"Gisela Levin"},{"scores":1,"_id":0}).pretty();
+{
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 44.51211101958831
+		},
+		{
+			"type" : "quiz",
+			"score" : 0.6578497966368002
+		},
+		{
+			"type" : "homework",
+			"score" : 93.36341655949683
+		},
+		{
+			"type" : "homework",
+			"score" : 49.43132782777443
+		}
+	]
+}
+{
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 15.88727528055548
+		},
+		{
+			"type" : "quiz",
+			"score" : 91.49884857295594
+		},
+		{
+			"type" : "homework",
+			"score" : 16.56032169309347
+		},
+		{
+			"type" : "homework",
+			"score" : 1.704262924559419
+		}
+	]
+}
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+4. Change name of person "Knoldus Noida" to "Noida Knoldus" 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer )> db.student.update({"name":"Knoldus Noida"},{$set:{"name":"Noida Knoldus"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+5. Add new score {type: "assignment", score: 60} to all documents belonging to person having name "Gisela Levin".
+   hint: This is bulk or multi document update.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer ) > db.student.update({"name": "Gisela Levin"},{$push :{"scores":{type: "assignment", score: 60} }},{multi:true})
+WriteResult({ "nMatched" : 2, "nUpserted" : 0, "nModified" : 2 })
+
+VERIFICATION :
+
+RECORD BEFORE UPDATE:
+> db.student.find({"name":"Gisela Levin"}).pretty();
+{
+	"_id" : 19,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 44.51211101958831
+		},
+		{
+			"type" : "quiz",
+			"score" : 0.6578497966368002
+		},
+		{
+			"type" : "homework",
+			"score" : 93.36341655949683
+		},
+		{
+			"type" : "homework",
+			"score" : 49.43132782777443
+		}
+	]
+}
+{
+	"_id" : 133,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 15.88727528055548
+		},
+		{
+			"type" : "quiz",
+			"score" : 91.49884857295594
+		},
+		{
+			"type" : "homework",
+			"score" : 16.56032169309347
+		},
+		{
+			"type" : "homework",
+			"score" : 1.704262924559419
+		}
+	]
+}
+
+
+RECORD AFTER UPDATE:
+> db.student.find({"name":"Gisela Levin"}).pretty();
+{
+	"_id" : 19,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 44.51211101958831
+		},
+		{
+			"type" : "quiz",
+			"score" : 0.6578497966368002
+		},
+		{
+			"type" : "homework",
+			"score" : 93.36341655949683
+		},
+		{
+			"type" : "homework",
+			"score" : 49.43132782777443
+		},
+		{
+			"type" : "assignment",
+			"score" : 60
+		}
+	]
+}
+{
+	"_id" : 133,
+	"name" : "Gisela Levin",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 15.88727528055548
+		},
+		{
+			"type" : "quiz",
+			"score" : 91.49884857295594
+		},
+		{
+			"type" : "homework",
+			"score" : 16.56032169309347
+		},
+		{
+			"type" : "homework",
+			"score" : 1.704262924559419
+		},
+		{
+			"type" : "assignment",
+			"score" : 60
+		}
+	]
+}
+> 
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+6. Find document with score of type assignment.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer ) > db.student.find({"scores.type":"assignment"}).pretty();
+{
+	"_id" : ObjectId("570884282c9db0f606a6e112"),
+	"name" : "Noida Knoldus",
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 1.4
+		},
+		{
+			"type" : "quiz",
+			"score" : 11.7
+		},
+		{
+			"type" : "homework",
+			"score" : 6.67
+		},
+		{
+			"type" : "assignment",
+			"score" : 35.87
+		}
+	]
+}
+> 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+7. Remove document of person haven name "Noida Knoldus"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer ) db.student.remove({"name":"Noida Knoldus"});
+WriteResult({ "nRemoved" : 1 })
+> 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

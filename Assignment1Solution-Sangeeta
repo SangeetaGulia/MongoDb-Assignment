@@ -1,0 +1,1267 @@
+> show databases;
+kip    0.078GB
+local  0.078GB
+video  0.078GB
+> use video;
+switched to db video
+> 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Record in Collection @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+> db.movieDetails.find().pretty();
+{
+	"_id" : ObjectId("5692a24824de1e0ce2dfd6a3"),
+	"title" : "B.G. monogatari: nijusai no nikki",
+	"year" : 1961,
+	"rated" : null,
+	"released" : ISODate("1961-10-29T04:00:00Z"),
+	"runtime" : null,
+	"countries" : [
+		"Japan"
+	],
+	"genres" : [
+		"Comedy"
+	],
+	"director" : "Seiji Maruyama",
+	"writers" : [
+		"Toshirô Ide",
+		"Yasuo Tanami"
+	],
+	"actors" : [
+		"Yuriko Hoshi",
+		"Akemi Kita",
+		"Kumi Mizuno",
+		"Mie Hama"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0363451",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("569190cf24de1e0ce2dfcd70"),
+	"title" : "Space Cowboys",
+	"year" : 2000,
+	"rated" : "PG-13",
+	"released" : ISODate("2000-08-04T04:00:00Z"),
+	"runtime" : 130,
+	"countries" : [
+		"USA",
+		"Australia"
+	],
+	"genres" : [
+		"Action",
+		"Adventure",
+		"Thriller"
+	],
+	"director" : "Clint Eastwood",
+	"writers" : [
+		"Ken Kaufman",
+		"Howard Klausner"
+	],
+	"actors" : [
+		"Clint Eastwood",
+		"Tommy Lee Jones",
+		"Donald Sutherland",
+		"James Garner"
+	],
+	"plot" : "When a retired engineer is called upon to rescue a failing satellite, he insists that his equally old teammates accompany him into space.",
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMTk4NzAwOTkwMF5BMl5BanBnXkFtZTYwMDM3MTM3._V1_SX300.jpg",
+	"imdb" : {
+		"id" : "tt0186566",
+		"rating" : 6.4,
+		"votes" : 57735
+	},
+	"tomato" : {
+		"meter" : 78,
+		"image" : "certified",
+		"rating" : 6.7,
+		"reviews" : 119,
+		"fresh" : 93,
+		"consensus" : "While the plot is overly cliched, the suberb acting by the stars (especially the tense interactions between Clint Eastwood and Tommy Lee Jones) and the spectacular special effects make this a movie worth seeing.",
+		"userMeter" : 53,
+		"userRating" : 3,
+		"userReviews" : 72556
+	},
+	"metacritic" : 73,
+	"awards" : {
+		"wins" : 4,
+		"nominations" : 6,
+		"text" : "Nominated for 1 Oscar. Another 4 wins & 6 nominations."
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24924de1e0ce2dfd6a4"),
+	"title" : "B.G. Roper Presents...",
+	"year" : 1995,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 60,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Adventure"
+	],
+	"director" : "Jon Woods",
+	"writers" : [ ],
+	"actors" : [
+		"Ariele Cole",
+		"Crystal Stone",
+		"Brook Taylor",
+		"Tatiana Varga"
+	],
+	"plot" : "When beautiful bondage film producer B.G. Roper moves to Hollywood to set up shop, she is quickly captured by an villain who assumes her identity, counting on the fact that no one would realize the great filmmaker was a woman. He hires three lovely models for his video shoots, leaving one bound, gagged and struggling in her office at the end of the day and kidnapping the other two. The buxom ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0788020",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24924de1e0ce2dfd6a5"),
+	"title" : "Incredible Blinking Machines Presents BG/B",
+	"year" : 2008,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 15,
+	"countries" : [ ],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"director" : "K. Ross Gaunt",
+	"writers" : [
+		"John Gyllenhaal"
+	],
+	"actors" : [
+		"John Gyllenhaal",
+		"Liesl Little",
+		"Naomi Gaunt",
+		"Christopher J. Morrone"
+	],
+	"plot" : "A tongue-in-cheek sales pitch to displace the world's most powerful computer with a flashy new technology...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt1396620",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24a24de1e0ce2dfd6a6"),
+	"title" : "Blur: Rated BG",
+	"year" : 2013,
+	"rated" : null,
+	"released" : ISODate("2013-02-15T05:00:00Z"),
+	"runtime" : 5,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"director" : "Trent Harris",
+	"writers" : [
+		"Trent Harris"
+	],
+	"actors" : [
+		"Joe Swift",
+		"Justin Barnes",
+		"Trent Harris",
+		"Viktor Amaechi"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt3393170",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24a24de1e0ce2dfd6a7"),
+	"title" : "The Notorious B.G.: A Forum with Bill Gates",
+	"year" : 2005,
+	"rated" : null,
+	"released" : ISODate("2005-10-27T04:00:00Z"),
+	"runtime" : 30,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Talk-Show"
+	],
+	"director" : null,
+	"writers" : [ ],
+	"actors" : [
+		"Bill Gates",
+		"Ian Riccaboni",
+		"Gideon Yago"
+	],
+	"plot" : "From the official website: Bill Gates is the most successful entrepreneur in American history. Every day, the products his company has created are used by more than a billion people, ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt4249884",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24a24de1e0ce2dfd6a8"),
+	"title" : "BG's Dirty 30: Cruise to Ensenada",
+	"year" : 2015,
+	"rated" : null,
+	"released" : ISODate("2015-01-02T05:00:00Z"),
+	"runtime" : 30,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Documentary",
+		"Short"
+	],
+	"director" : "Raymond J. Roman",
+	"writers" : [ ],
+	"actors" : [ ],
+	"plot" : null,
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BODIwNDIwNzc0Ml5BMl5BanBnXkFtZTgwNjcxODQwNDE@._V1_SX300.jpg",
+	"imdb" : {
+		"id" : "tt4352324",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24b24de1e0ce2dfd6a9"),
+	"title" : "B.D. in alert",
+	"year" : 1971,
+	"rated" : null,
+	"released" : ISODate("1971-07-26T04:00:00Z"),
+	"runtime" : 95,
+	"countries" : [
+		"Romania"
+	],
+	"genres" : [
+		"Action",
+		"Comedy"
+	],
+	"director" : "Mircea Dragan",
+	"writers" : [
+		"Mircea Dragan",
+		"Nicolae Tic"
+	],
+	"actors" : [
+		"Toma Caragiu",
+		"Dem Radulescu",
+		"Sebastian Papaiani",
+		"Puiu Calinescu"
+	],
+	"plot" : "In 1971 three inept petty Romanian criminals are released from prison but find themselves at the core of two money laundering and burglary cases.",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0123390",
+		"rating" : 8.6,
+		"votes" : 1114
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24b24de1e0ce2dfd6aa"),
+	"title" : "B.D. in the mountains and on the seaside",
+	"year" : 1971,
+	"rated" : null,
+	"released" : ISODate("1971-12-20T05:00:00Z"),
+	"runtime" : 100,
+	"countries" : [
+		"Romania"
+	],
+	"genres" : [
+		"Comedy",
+		"Action",
+		"Crime"
+	],
+	"director" : "Mircea Dragan",
+	"writers" : [
+		"Mircea Dragan",
+		"Nicolae Tic"
+	],
+	"actors" : [
+		"Toma Caragiu",
+		"Dem Radulescu",
+		"Ion Fintesteanu",
+		"Puiu Calinescu"
+	],
+	"plot" : "Three paroled inept Romanian convicts dream up get-rich-quick schemes on the Black Sea Riviera where a petty-crime police squad led by Captain Panait is vacationing.",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0123392",
+		"rating" : 8.6,
+		"votes" : 1105
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24c24de1e0ce2dfd6ab"),
+	"title" : "B.D. în alerta - Vaduve cu termen redus",
+	"year" : 1971,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 95,
+	"countries" : [
+		"Romania"
+	],
+	"genres" : [
+		"Action",
+		"Comedy",
+		"Crime"
+	],
+	"director" : "Mircea Dragan",
+	"writers" : [
+		"Mircea Dragan",
+		"Nicolae Tic"
+	],
+	"actors" : [
+		"Puiu Calinescu",
+		"Toma Caragiu",
+		"Jean Constantin",
+		"Iurie Darie"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt3056888",
+		"rating" : 7.8,
+		"votes" : 156
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24c24de1e0ce2dfd6ac"),
+	"title" : "B.D. în alerta - Profesorul de mimica",
+	"year" : 1970,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 95,
+	"countries" : [
+		"Romania"
+	],
+	"genres" : [
+		"Action",
+		"Comedy",
+		"Crime"
+	],
+	"director" : "Mircea Dragan",
+	"writers" : [
+		"Mircea Dragan",
+		"Nicolae Tic"
+	],
+	"actors" : [
+		"Puiu Calinescu",
+		"Toma Caragiu",
+		"Jean Constantin",
+		"Iurie Darie"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt3056884",
+		"rating" : 8.5,
+		"votes" : 30
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24d24de1e0ce2dfd6ad"),
+	"title" : "B.D. Women",
+	"year" : 1994,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 20,
+	"countries" : [
+		"UK"
+	],
+	"genres" : [
+		"Short"
+	],
+	"director" : "Campbell Ex",
+	"writers" : [
+		"Campbell Ex"
+	],
+	"actors" : [ ],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0121091",
+		"rating" : 4.4,
+		"votes" : 5
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24d24de1e0ce2dfd6af"),
+	"title" : "B.D.",
+	"year" : 2004,
+	"rated" : null,
+	"released" : null,
+	"runtime" : 13,
+	"countries" : [ ],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"director" : "Jacinto Lucas Pires",
+	"writers" : [
+		"Jacinto Lucas Pires"
+	],
+	"actors" : [
+		"Marcos Barbosa",
+		"Sofia Marques",
+		"Catarina Requeijo",
+		"Joana Cotrim"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0821957",
+		"rating" : null,
+		"votes" : null
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24e24de1e0ce2dfd6b1"),
+	"title" : "Bi pooli",
+	"year" : 2009,
+	"rated" : null,
+	"released" : ISODate("2009-09-10T04:00:00Z"),
+	"runtime" : 100,
+	"countries" : [
+		"Iran"
+	],
+	"genres" : [
+		"Comedy",
+		"Drama"
+	],
+	"director" : "Hamid Nematollah",
+	"writers" : [
+		"Hadi Moghadamdoost",
+		"Hamid Nematollah"
+	],
+	"actors" : [
+		"Siamak Ansari",
+		"Babak Hamidian",
+		"Leila Hatami",
+		"Amir Jafari"
+	],
+	"plot" : "A haughty acclaimed newly married fashion designer named Iraj is shown the door by his boss after the boss's son arrives at Iran to take over his father's company. Iraj reluctant to ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt1997291",
+		"rating" : 6.6,
+		"votes" : 1102
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24f24de1e0ce2dfd6b3"),
+	"title" : "O-Bi, O-Ba - The End of Civilization",
+	"year" : 1985,
+	"rated" : null,
+	"released" : ISODate("1985-01-28T05:00:00Z"),
+	"runtime" : 88,
+	"countries" : [
+		"Poland"
+	],
+	"genres" : [
+		"Drama",
+		"Mystery",
+		"Sci-Fi"
+	],
+	"director" : "Piotr Szulkin",
+	"writers" : [
+		"Piotr Szulkin"
+	],
+	"actors" : [
+		"Jerzy Stuhr",
+		"Krystyna Janda",
+		"Kalina Jedrusik",
+		"Mariusz Dmochowski"
+	],
+	"plot" : "Set in an underground dungeon inhabited by bundled, ragged human beings, after the nuclear holocaust. The story follows the wanderings of a hero through the situations of survival. People ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0089714",
+		"rating" : 7.2,
+		"votes" : 508
+	},
+	"awards" : {
+		"wins" : 1,
+		"nominations" : 0,
+		"text" : "1 win."
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24f24de1e0ce2dfd6b5"),
+	"title" : "Xiao Bi de gu shi",
+	"year" : 1983,
+	"rated" : null,
+	"released" : ISODate("1983-12-01T05:00:00Z"),
+	"runtime" : 100,
+	"countries" : [
+		"Taiwan"
+	],
+	"genres" : [
+		"Drama"
+	],
+	"director" : "Kun Hao Chen",
+	"writers" : [
+		"T'ien-wen Chu",
+		"T'ien-wen Chu",
+		"Yah-Ming Ding",
+		"Hsiao-Hsien Hou",
+		"Shu-Chen Hsu"
+	],
+	"actors" : [
+		"Chun-fang Chang",
+		"Ching-Kuo Yan",
+		"Doze Niu",
+		"Hsi Chang"
+	],
+	"plot" : null,
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0085695",
+		"rating" : 7,
+		"votes" : 118
+	},
+	"awards" : {
+		"wins" : 3,
+		"nominations" : 2,
+		"text" : "3 wins & 2 nominations."
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a24f24de1e0ce2dfd6b7"),
+	"title" : "Bi the Way",
+	"year" : 2008,
+	"rated" : null,
+	"released" : ISODate("2008-03-08T05:00:00Z"),
+	"runtime" : 85,
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Documentary"
+	],
+	"director" : "Brittany Blockman, Josephine Decker",
+	"writers" : [ ],
+	"actors" : [
+		"Austin Head",
+		"J. Michael Bailey",
+		"Jennifer Bamgardner",
+		"David Barasch"
+	],
+	"plot" : "'Bi the Way' investigates the recent rise in the \"whatever\" phenomenon. Featuring interviews this documentary explores the changing sexual landscape of America in a bizarre and hilarious ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0951257",
+		"rating" : 6.1,
+		"votes" : 103
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a25024de1e0ce2dfd6b9"),
+	"title" : "La bi xiao xiao sheng",
+	"year" : 1995,
+	"rated" : null,
+	"released" : ISODate("1995-03-25T05:00:00Z"),
+	"runtime" : 88,
+	"countries" : [
+		"Hong Kong",
+		"Taiwan"
+	],
+	"genres" : [
+		"Action",
+		"Comedy",
+		"Drama"
+	],
+	"director" : "Yen-Ping Chu",
+	"writers" : [
+		"Cheng Kuo",
+		"Hsin Wei"
+	],
+	"actors" : [
+		"Shao-Wen Hao",
+		"Takeshi Kaneshiro",
+		"Man Tat Ng",
+		"Athena Chu"
+	],
+	"plot" : "A meek, middle-aged schoolteacher is put in charge of a class of trouble makers. Unable to withstand the torments they put him through, he runs away to a Shaolin temple. At the temple, he ...",
+	"poster" : null,
+	"imdb" : {
+		"id" : "tt0113588",
+		"rating" : 6.5,
+		"votes" : 68
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a25124de1e0ce2dfd6bb"),
+	"title" : "Ab Tak Chhappan",
+	"year" : 2004,
+	"rated" : null,
+	"released" : ISODate("2004-02-27T05:00:00Z"),
+	"runtime" : 129,
+	"countries" : [
+		"India"
+	],
+	"genres" : [
+		"Crime",
+		"Drama",
+		"Thriller"
+	],
+	"director" : "Shimit Amin",
+	"writers" : [
+		"Sandeep Srivastava",
+		"Sandeep Srivastava"
+	],
+	"actors" : [
+		"Nana Patekar",
+		"Revathy",
+		"Yashpal Sharma",
+		"Mohan Agashe"
+	],
+	"plot" : "Aan honest cop named Sadhu Agashe makes a name for himself by killing criminals in sting operations instead of locking them up in prison. The film follows his method of working, gives an ...",
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMzNkYzEyMDItNWI1OS00YjYxLTljNDUtYzZkYWFhMzdjNjg1XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+	"imdb" : {
+		"id" : "tt0402014",
+		"rating" : 8,
+		"votes" : 3652
+	},
+	"awards" : {
+		"wins" : 2,
+		"nominations" : 15,
+		"text" : "2 wins & 15 nominations."
+	},
+	"type" : "movie"
+}
+{
+	"_id" : ObjectId("5692a25724de1e0ce2dfd6cd"),
+	"title" : "Ao qi xiong ying",
+	"year" : 1989,
+	"rated" : null,
+	"released" : ISODate("1989-04-05T04:00:00Z"),
+	"runtime" : 90,
+	"countries" : [
+		"Hong Kong"
+	],
+	"genres" : [
+		"Action"
+	],
+	"director" : "King Chu Lee",
+	"writers" : [
+		"Gwing-Gai Lee"
+	],
+	"actors" : [
+		"Andy Lau",
+		"Rosamund Kwan",
+		"Kiu Wai Miu",
+		"Lung Chan"
+	],
+	"plot" : null,
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMTU1NTA0NjYxN15BMl5BanBnXkFtZTcwNDUwMjcxMQ@@._V1_SX300.jpg",
+	"imdb" : {
+		"id" : "tt0096826",
+		"rating" : 5.5,
+		"votes" : 42
+	},
+	"awards" : {
+		"wins" : 0,
+		"nominations" : 0,
+		"text" : ""
+	},
+	"type" : "movie"
+}
+Type "it" for more
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q1) Which of the choices below is the title of a movie from the year 2013 that is rated PG-13 and won no awards? Please query the video.movieDetails collection to find the answer?
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+Answer 1)> db.movieDetails.find({"year":2013,"rated":"PG-13","awards.wins":0},{"title":1,"_id":0}).pretty();
+
+OUTPUT:
+{ "title" : "A Decade of Decadence, Pt. 2: Legacy of Dreams" }
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q2) Using the video.movieDetails collection, which of the queries below would produce output documents that resemble the following. There can be more than one answer. 
+
+NOTE: We are not asking you to consider specifically which documents would be output from the queries below, but rather what fields the output documents would contain.
+
+{ "title" : "P.S. I Love You" }
+{ "title" : "Love Actually" }
+{ "title" : "Shakespeare in Love" }
+
+
+
+
+a) db.movieDetails.find({title: ""}, {title: 1})
+b) db.movieDetails.find({title: "Muppets from Space"}, {title: 1})
+c) db.movieDetails.find({}, {title: 1})
+d) db.movieDetails.find({}, {title})
+e) db.movieDetails.find({}, {title: 1, _id: 0})
+f) db.movieDetails.find({year: 1964}, {title: 1, _id: 0})
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 2) Option e and f will have output in the mentioned format where _id:0, i.e do not show _id attribute.
+
+a) > db.movieDetails.find({title: ""}, {title: 1})
+> 
+> 
+
+
+b) > db.movieDetails.find({title: "Muppets from Space"}, {title: 1})
+{ "_id" : ObjectId("569190cf24de1e0ce2dfcd73"), "title" : "Muppets from Space" }
+> 
+>
+
+c) > db.movieDetails.find({}, {title: 1})
+{ "_id" : ObjectId("5692a24824de1e0ce2dfd6a3"), "title" : "B.G. monogatari: nijusai no nikki" }
+{ "_id" : ObjectId("569190cf24de1e0ce2dfcd70"), "title" : "Space Cowboys" }
+{ "_id" : ObjectId("5692a24924de1e0ce2dfd6a4"), "title" : "B.G. Roper Presents..." }
+{ "_id" : ObjectId("5692a24924de1e0ce2dfd6a5"), "title" : "Incredible Blinking Machines Presents BG/B" }
+{ "_id" : ObjectId("5692a24a24de1e0ce2dfd6a6"), "title" : "Blur: Rated BG" }
+{ "_id" : ObjectId("5692a24a24de1e0ce2dfd6a7"), "title" : "The Notorious B.G.: A Forum with Bill Gates" }
+{ "_id" : ObjectId("5692a24a24de1e0ce2dfd6a8"), "title" : "BG's Dirty 30: Cruise to Ensenada" }
+{ "_id" : ObjectId("5692a24b24de1e0ce2dfd6a9"), "title" : "B.D. in alert" }
+{ "_id" : ObjectId("5692a24b24de1e0ce2dfd6aa"), "title" : "B.D. in the mountains and on the seaside" }
+{ "_id" : ObjectId("5692a24c24de1e0ce2dfd6ab"), "title" : "B.D. în alerta - Vaduve cu termen redus" }
+{ "_id" : ObjectId("5692a24c24de1e0ce2dfd6ac"), "title" : "B.D. în alerta - Profesorul de mimica" }
+{ "_id" : ObjectId("5692a24d24de1e0ce2dfd6ad"), "title" : "B.D. Women" }
+{ "_id" : ObjectId("5692a24d24de1e0ce2dfd6af"), "title" : "B.D." }
+{ "_id" : ObjectId("5692a24e24de1e0ce2dfd6b1"), "title" : "Bi pooli" }
+{ "_id" : ObjectId("5692a24f24de1e0ce2dfd6b3"), "title" : "O-Bi, O-Ba - The End of Civilization" }
+{ "_id" : ObjectId("5692a24f24de1e0ce2dfd6b5"), "title" : "Xiao Bi de gu shi" }
+{ "_id" : ObjectId("5692a24f24de1e0ce2dfd6b7"), "title" : "Bi the Way" }
+{ "_id" : ObjectId("5692a25024de1e0ce2dfd6b9"), "title" : "La bi xiao xiao sheng" }
+{ "_id" : ObjectId("5692a25124de1e0ce2dfd6bb"), "title" : "Ab Tak Chhappan" }
+{ "_id" : ObjectId("5692a25724de1e0ce2dfd6cd"), "title" : "Ao qi xiong ying" }
+Type "it" for more
+> it
+{ "_id" : ObjectId("5692a25824de1e0ce2dfd6d1"), "title" : "DV: Domestic Violence" }
+{ "_id" : ObjectId("5692a26324de1e0ce2dfd6e3"), "title" : "Ranjana Ami Ar Ashbona" }
+{ "_id" : ObjectId("5692a2aa24de1e0ce2dfd780"), "title" : "Life as a House" }
+{ "_id" : ObjectId("5692a2aa24de1e0ce2dfd781"), "title" : "Thick as Thieves" }
+{ "_id" : ObjectId("5692a2aa24de1e0ce2dfd782"), "title" : "My Life as a Dog" }
+{ "_id" : ObjectId("5692a2aa24de1e0ce2dfd783"), "title" : "As It Is in Heaven" }
+{ "_id" : ObjectId("5692a2aa24de1e0ce2dfd784"), "title" : "Cool as Ice" }
+{ "_id" : ObjectId("5692a2ab24de1e0ce2dfd785"), "title" : "As Tears Go By" }
+{ "_id" : ObjectId("5692a2ab24de1e0ce2dfd786"), "title" : "Come as You Are" }
+{ "_id" : ObjectId("5692a2ab24de1e0ce2dfd787"), "title" : "Ev" }
+{ "_id" : ObjectId("5692a2ac24de1e0ce2dfd788"), "title" : "Küçük ev" }
+{ "_id" : ObjectId("5692a2ac24de1e0ce2dfd789"), "title" : "Ev hali" }
+{ "_id" : ObjectId("5692a2ad24de1e0ce2dfd78a"), "title" : "Az 1812-es év" }
+{ "_id" : ObjectId("5692a2ae24de1e0ce2dfd78b"), "title" : "Kiralik ev" }
+{ "_id" : ObjectId("5692a2ae24de1e0ce2dfd78c"), "title" : "Expediente EV-0043" }
+{ "_id" : ObjectId("5692a2af24de1e0ce2dfd78d"), "title" : "No EV Trouble in Little China" }
+{ "_id" : ObjectId("5692a2b024de1e0ce2dfd78e"), "title" : "Basketball Wives: Temper Tantrums w/ Ev" }
+{ "_id" : ObjectId("5692a2bc24de1e0ce2dfd7ab"), "title" : "Les demoiselles ont eu 25 ans" }
+{ "_id" : ObjectId("5692a2bd24de1e0ce2dfd7ac"), "title" : "Eu sunt Adam!" }
+{ "_id" : ObjectId("5692a2c024de1e0ce2dfd7b2"), "title" : "Ey Pari Kojai" }
+Type "it" for more
+
+
+d) db.movieDetails.find({}, {title})
+2016-04-07T22:41:55.594+0530 E QUERY    SyntaxError: Unexpected token }
+> 
+> 
+
+
+e) > db.movieDetails.find({}, {title: 1, _id: 0})
+{ "title" : "B.G. monogatari: nijusai no nikki" }
+{ "title" : "Space Cowboys" }
+{ "title" : "B.G. Roper Presents..." }
+{ "title" : "Incredible Blinking Machines Presents BG/B" }
+{ "title" : "Blur: Rated BG" }
+{ "title" : "The Notorious B.G.: A Forum with Bill Gates" }
+{ "title" : "BG's Dirty 30: Cruise to Ensenada" }
+{ "title" : "B.D. in alert" }
+{ "title" : "B.D. in the mountains and on the seaside" }
+{ "title" : "B.D. în alerta - Vaduve cu termen redus" }
+{ "title" : "B.D. în alerta - Profesorul de mimica" }
+{ "title" : "B.D. Women" }
+{ "title" : "B.D." }
+{ "title" : "Bi pooli" }
+{ "title" : "O-Bi, O-Ba - The End of Civilization" }
+{ "title" : "Xiao Bi de gu shi" }
+{ "title" : "Bi the Way" }
+{ "title" : "La bi xiao xiao sheng" }
+{ "title" : "Ab Tak Chhappan" }
+{ "title" : "Ao qi xiong ying" }
+Type "it" for more
+> it
+{ "title" : "DV: Domestic Violence" }
+{ "title" : "Ranjana Ami Ar Ashbona" }
+{ "title" : "Life as a House" }
+{ "title" : "Thick as Thieves" }
+{ "title" : "My Life as a Dog" }
+{ "title" : "As It Is in Heaven" }
+{ "title" : "Cool as Ice" }
+{ "title" : "As Tears Go By" }
+{ "title" : "Come as You Are" }
+{ "title" : "Ev" }
+{ "title" : "Küçük ev" }
+{ "title" : "Ev hali" }
+{ "title" : "Az 1812-es év" }
+{ "title" : "Kiralik ev" }
+{ "title" : "Expediente EV-0043" }
+{ "title" : "No EV Trouble in Little China" }
+{ "title" : "Basketball Wives: Temper Tantrums w/ Ev" }
+{ "title" : "Les demoiselles ont eu 25 ans" }
+{ "title" : "Eu sunt Adam!" }
+{ "title" : "Ey Pari Kojai" }
+Type "it" for more
+> 
+
+
+f)> db.movieDetails.find({year: 1964}, {title: 1, _id: 0})
+{ "title" : "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb" }
+{ "title" : "Before Hollywood, There Was Fort Lee, N.J." }
+{ "title" : "Aa bakudan" }
+{ "title" : "FX 18" }
+{ "title" : "Mit csinált Felséged 3-tól 5-ig?" }
+{ "title" : "Mars na Drinu" }
+{ "title" : "Heshtje që flet" }
+{ "title" : "Tintin et les oranges bleues" }
+{ "title" : "El rapto de T.T." }
+{ "title" : "Abflug LH 646" }
+{ "title" : "Xie jian mu dan hong" }
+{ "title" : "I Am Cuba" }
+{ "title" : "KK 17" }
+> 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q3) How many movies list "Sweden" second in the the list of countries.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 3) > db.movieDetails.find({"countries.1":"Sweden"},{"title":1,"_id":0}).pretty();
+{ "title" : "Dallas: J.R. Returns" }
+{ "title" : "The Girl with the Dragon Tattoo" }
+{ "title" : "If I Want to Whistle, I Whistle" }
+{ "title" : "Au Hasard Balthazar" }
+{ "title" : "Burma VJ: Reporter i et lukket land" }
+{ "title" : "Hin helgu vé" }
+> 
+
+> db.movieDetails.find({"countries.1":"Sweden"},{"title":1,"_id":0}).count();
+6
+> 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+For Verification:
+
+> db.movieDetails.find({"countries.1":"Sweden"},{"title":1,"countries":1,"_id":0});
+{ "title" : "Dallas: J.R. Returns", "countries" : [ "USA", "Sweden" ] }
+{ "title" : "The Girl with the Dragon Tattoo", "countries" : [ "USA", "Sweden", "Norway" ] }
+{ "title" : "If I Want to Whistle, I Whistle", "countries" : [ "Romania", "Sweden", "Germany" ] }
+{ "title" : "Au Hasard Balthazar", "countries" : [ "France", "Sweden" ] }
+{ "title" : "Burma VJ: Reporter i et lukket land", "countries" : [ "Denmark", "Sweden", "Norway", "UK", "USA", "Germany", "Netherlands", "Israel", "Spain", "Belgium", "Canada" ] }
+{ "title" : "Hin helgu vé", "countries" : [ "Iceland", "Sweden" ] }
+> 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q4) How many documents in our video.movieDetails collection list just the following two genres: "Comedy" and "Crime" with "Comedy" listed first.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 4) > db.movieDetails.find({"genres.0":"Comedy","genres.1":"Crime","genres": { $size:2, $all: ["Comedy", "Crime"] }},{"title":1,"genres":1,"_id":0}).count();
+20
+> 
+> 
+> db.movieDetails.find({"genres.0":"Comedy","genres.1":"Crime","genres": { $size:2, $all: ["Comedy", "Crime"] }},{"title":1,"genres":1,"_id":0});
+
+{ "title" : "The Naked Gun: From the Files of Police Squad!", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "The Naked Gun 2½: The Smell of Fear", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Naked Gun 33 1/3: The Final Insult", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "The Big Lebowski", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Torrente, el brazo tonto de la ley", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "El mundo es nuestro", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "La leggenda di Al, John e Jack", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Er kanns nicht lassen", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Scotland, Pa.", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "See No Evil, Hear No Evil", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Olsen-banden og Dynamitt-Harry går amok", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "My Cousin Vinny", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Olsen-banden møter kongen og knekten", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Don't Be a Menace to South Central While Drinking Your Juice in the Hood", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Olsen-banden og Dynamitt-Harry", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Az elvarázsolt dollár", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Go", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Let's Go to Prison", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Olsenbanden og Dynamitt-Harry mot nye høyder", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "How to Beat the High Co$t of Living", "genres" : [ "Comedy", "Crime" ] }
+> 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q5) As a follow up to the previous question, how many documents in the video.movieDetails collection list both "Comedy" and "Crime" as genres regardless of how many other genres are listed?
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 5) > db.movieDetails.find({ $and: [{"genres":"Comedy"},{"genres":"Crime"}]},{"title":1,"genres":1,"_id":0}).count();
+56
+> 
+> db.movieDetails.find({ $and: [{"genres":"Comedy"},{"genres":"Crime"}]},{"title":1,"genres":1,"_id":0});
+{ "title" : "B.D. in the mountains and on the seaside", "genres" : [ "Comedy", "Action", "Crime" ] }
+{ "title" : "B.D. în alerta - Vaduve cu termen redus", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "B.D. în alerta - Profesorul de mimica", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "Trail of the Pink Panther", "genres" : [ "Comedy", "Crime", "Mystery" ] }
+{ "title" : "The Naked Gun: From the Files of Police Squad!", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "The Naked Gun 2½: The Smell of Fear", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Naked Gun 33 1/3: The Final Insult", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Happy, Texas", "genres" : [ "Comedy", "Crime", "Romance" ] }
+{ "title" : "The Big Lebowski", "genres" : [ "Comedy", "Crime" ] }
+{ "title" : "Wild at Heart", "genres" : [ "Comedy", "Crime", "Thriller" ] }
+{ "title" : "I Love You Phillip Morris", "genres" : [ "Biography", "Comedy", "Crime" ] }
+{ "title" : "Down by Law", "genres" : [ "Comedy", "Crime", "Drama" ] }
+{ "title" : "Herod's Law", "genres" : [ "Comedy", "Crime", "Mystery" ] }
+{ "title" : "Chalti Ka Naam Gaadi", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "Mr. Brooks", "genres" : [ "Comedy", "Crime", "Drama" ] }
+{ "title" : "Aa bakudan", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "Bad Boys II", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "Big Momma's House", "genres" : [ "Action", "Comedy", "Crime" ] }
+{ "title" : "Date Night", "genres" : [ "Comedy", "Crime", "Romance" ] }
+{ "title" : "Torrente, el brazo tonto de la ley", "genres" : [ "Comedy", "Crime" ] }
+Type "it" for more
+> 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q6)Suppose you wish to update the value of the "plot" field for one document in our "movieDetails" collection to correct a typo. Which of the following update operators and modifiers would you need to use to do this?
+
+$sort
+$slice
+$each
+$unset
+$addToSet
+$push
+$position
+$rename
+$set
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 6) $set
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q7) Suppose our movie details documents are structured so that rather than contain an awards field that looks like this:
+
+"awards" : {
+    "wins" : 56,
+    "nominations" : 86,
+    "text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+}
+they are structured with an awards field as follows:
+
+"awards" : {
+    "oscars" : [
+        {"award": "bestAnimatedFeature", "result": "won"},
+        {"award": "bestMusic", "result": "won"},
+        {"award": "bestPicture", "result": "nominated"},
+        {"award": "bestSoundEditing", "result": "nominated"},
+        {"award": "bestScreenplay", "result": "nominated"}
+    ],
+    "wins" : 56,
+    "nominations" : 86,
+    "text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+}
+What query would we use in the Mongo shell to return all movies in the video.movieDetails collection that either won or were nominated for a best picture Oscar? You may assume that an award will appear in the oscars array only if the movie won or was nominated. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 7) db.movieDetails.find({ $and :[{"awards.oscars.award": "bestPicture"},{ $or :[{ "awards.oscars.result":"won"}, {"awards.oscars.result": "nominated"}]}]},{"name":1}).pretty();
+
+
+Verification:
+
+> db.sample.find().pretty();
+{
+	"_id" : ObjectId("5707e54b756fa3bf06b856bf"),
+	"awards" : {
+		"oscars" : [
+			{
+				"award" : "bestAnimatedFeature",
+				"result" : "won"
+			},
+			{
+				"award" : "bestMusic",
+				"result" : "won"
+			},
+			{
+				"award" : "bestPicture",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestSoundEditing",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestScreenplay",
+				"result" : "nominated"
+			}
+		],
+		"wins" : 56,
+		"nominations" : 86,
+		"text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+	}
+}
+{
+	"_id" : ObjectId("5707e74d756fa3bf06b856c0"),
+	"name" : "Rockon",
+	"awards" : {
+		"oscars" : [
+			{
+				"award" : "bestAnimatedFeature",
+				"result" : "won"
+			},
+			{
+				"award" : "bestMusic",
+				"result" : "won"
+			},
+			{
+				"award" : "bestPicture",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestSoundEditing",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestScreenplay",
+				"result" : "nominated"
+			}
+		],
+		"wins" : 56,
+		"nominations" : 86,
+		"text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+	}
+}
+{
+	"_id" : ObjectId("5707e770756fa3bf06b856c1"),
+	"name" : "Chak de india",
+	"awards" : {
+		"oscars" : [
+			{
+				"award" : "bestAnimatedFeature",
+				"result" : "won"
+			},
+			{
+				"award" : "bestMusic",
+				"result" : "won"
+			},
+			{
+				"award" : "bestPicture",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestSoundEditing",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestScreenplay",
+				"result" : "nominated"
+			}
+		],
+		"wins" : 56,
+		"nominations" : 86,
+		"text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+	}
+}
+{
+	"_id" : ObjectId("5707e936756fa3bf06b856c2"),
+	"name" : "BANG",
+	"awards" : {
+		"oscars" : [
+			{
+				"award" : "bestAnimatedFeature",
+				"result" : "won"
+			},
+			{
+				"award" : "bestMusic",
+				"result" : "won"
+			},
+			{
+				"award" : "bestSoundEditing",
+				"result" : "nominated"
+			},
+			{
+				"award" : "bestScreenplay",
+				"result" : "nominated"
+			}
+		],
+		"wins" : 56,
+		"nominations" : 86,
+		"text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+	}
+}
+{
+	"_id" : ObjectId("5707eada756fa3bf06b856c3"),
+	"name" : "Hello Brother",
+	"awards" : {
+		"oscars" : [
+			{
+				"award" : "bestScreenplay",
+				"result" : "nominated"
+			}
+		],
+		"wins" : 56,
+		"nominations" : 86,
+		"text" : "Won 2 Oscars. Another 56 wins and 86 nominations."
+	}
+}
+> 
+
+
+Query:
+
+> db.sample.find({ $and :[{"awards.oscars.award": "bestPicture"},{ $or :[{ "awards.oscars.result":"won"}, {"awards.oscars.result": "nominated"}]}]},{"name":1}).pretty();
+
+Output :
+
+{ "_id" : ObjectId("5707e54b756fa3bf06b856bf") }
+{ "_id" : ObjectId("5707e74d756fa3bf06b856c0"), "name" : "Rockon" }
+{ "_id" : ObjectId("5707e770756fa3bf06b856c1"), "name" : "Chak de india" }
+> 
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Q8) Write an update command that will remove the "tomato.consensus" field for all documents matching the following criteria:
+
+The number of imdb votes is less than 10,000
+The year for the movie is between 2010 and 2013 inclusive
+The tomato.consensus field is null
+How many documents required an update to eliminate a "tomato.consensus" field?
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 8) > db.movieDetails.remove({"imdb.votes": { $lt :10000} },{"year":{ $lte : 2013 , $gte : 2010 }} , {"tomato.consensus" : null } );
+
+OUTPUT: 
+
+WriteResult({ "nRemoved" : 1273 })
+
+Note:  No requirement for any update was asked.
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+

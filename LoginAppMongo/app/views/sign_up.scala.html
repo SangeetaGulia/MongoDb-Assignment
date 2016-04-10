@@ -1,0 +1,22 @@
+@(userForm:Form[UserSignUpData])(implicit flash:Flash,message:Messages)
+@import helper._
+
+@main("login"){
+
+
+<h1 style="text-align:center;">CREATE NEW Account:</h1>
+@helper.form(action=routes.SignupController.createUser){
+@helper.inputText(userForm("id"))
+@helper.inputText(userForm("name"))
+@helper.inputText(userForm("email"))
+@helper.inputPassword(userForm("password"))
+@helper.inputPassword(userForm("confirm-password"))
+<input type="submit" value="submit">
+<p>
+    @flash.get("error")
+</p>
+
+}
+
+
+}

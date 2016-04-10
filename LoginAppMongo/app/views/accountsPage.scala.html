@@ -1,0 +1,15 @@
+@(email:String)(implicit flash:Flash,message:Messages)
+@import helper._
+
+@main("accountsPage"){
+
+
+<h1> Account Information </h1>
+<p>
+    <h1> Welcome @email !</h1>
+</p>
+
+
+<BR/><BR/>
+<h1><a href="@routes.AccountController.logout"> LOGOUT </a></h1>
+}

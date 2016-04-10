@@ -1,0 +1,25 @@
+@(userForm:Form[UserData])(implicit flash:Flash,message:Messages)
+@import helper._
+
+
+@main("login"){
+<div style='background-image: url(@routes.Assets.versioned("images/back8.jpg"));  border: 1px solid black;'>
+
+    @if(flash.get("error").isDefined){
+      <div class="alert alert-danger">
+    <strong>@flash.get("error")</strong>
+            </div>
+}
+</p>
+<h1> Login </h1>
+    @helper.form(action=routes.LoginController.authenticate()){
+    @helper.inputText(userForm("email"))
+    @helper.inputPassword(userForm("password"),'_help->"It should be non-empty")
+    <input type="submit" value="Login">
+
+
+}
+    <BR/>
+<a href="@routes.SignupController.showSignUpPage"> Create New User </a>
+</div>
+}
