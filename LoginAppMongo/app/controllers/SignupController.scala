@@ -4,6 +4,7 @@ import model.{User, UserOperation}
 import play.api.data.Forms._
 import play.api.data._
 import play.api.mvc.{Action, _}
+import scala.concurrent.ExecutionContext.Implicits.global
 import play.api.i18n.Messages.Implicits._
 import play.api.Play.current
 
@@ -34,25 +35,26 @@ class SignupController extends Controller{
   }
 
 
-  def showSignUpPage =Action { implicit request =>
+  def showSignUpPage:Action[AnyContent] =Action { implicit request =>
     Ok(views.html.sign_up(userForm))
   }
 
-  def createUser = Action { implicit request =>
+  def createUser: Action[AnyContent] = Action { implicit request =>
       userForm.bindFromRequest.fold(
         formWithErrors =>{
           BadRequest(views.html.sign_up(formWithErrors))
          },
         UsersData => {
-          val data=User(UsersData.id,UsersData.name,UsersData.email,UsersData.password)
-          val isRegister = obj.register(data)
-
-          isRegister match {
-            case true => Redirect(routes.AccountController.showAccountsPage).withSession(
-              "connected" -> UsersData.email)
-            case false => Ok("Oops!! Something went wrong ")
+          val data = User(UsersData.id,UsersData.name,UsersData.password,UsersData.email)
+          val res=obj.register(data)
+          val result = res match {
+            case true =>
+              Redirect(routes.AccountController.showAccountsPage).withSession("email" -> UsersData.email)
+            case false =>
+//              Redirect(routes.AccountController.showAccountsPage).withSession("connected" -> UsersData.email)
+              Ok("Added New User")
           }
-
+          result
         })
   }
 
