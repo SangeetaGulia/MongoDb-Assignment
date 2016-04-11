@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   ws,
   specs2 % Test,
   "org.webjars" %% "webjars-play" % "2.4.0-1",
-  "org.reactivemongo" %% "reactivemongo" % "0.11.11",
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.11-play24",
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
   "org.scalatestplus" %% "play" % "1.4.0-M3" % "test"
 )
