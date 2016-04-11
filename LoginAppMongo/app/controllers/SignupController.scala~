@@ -50,7 +50,8 @@ class SignupController extends Controller{
           val result = res match {
             case true =>
               Redirect(routes.AccountController.showAccountsPage).withSession("email" -> UsersData.email)
-            case false =>     
+            case false =>
+             
               Ok("OOPs !!! Something went wrong")
           }
           result
